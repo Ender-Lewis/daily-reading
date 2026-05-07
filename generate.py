@@ -12,7 +12,9 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 # 路径配置（GitHub Actions中通过环境变量覆盖）
-INDEX_PATH = os.environ.get('INDEX_PATH', 'index.json')
+INDEX_PATH = os.environ.get('INDEX_PATH', 'data/index.json')
+if not os.path.exists(INDEX_PATH):
+    INDEX_PATH = 'index.json'
 OUTPUT_PATH = os.environ.get('OUTPUT_PATH', 'index.html')
 
 CST = timezone(timedelta(hours=8))
