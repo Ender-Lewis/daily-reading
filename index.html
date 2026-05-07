@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日阅读</title>
+    <title>每日阅读 · 2026年05月07日</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,90 +12,90 @@
             color: #292524;
             line-height: 1.8;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
         }
         .header {
             background: linear-gradient(135deg, #292524 0%, #44403c 100%);
             color: #fafaf9;
-            padding: 2.5rem 1.5rem;
+            padding: 2rem 1.5rem;
             text-align: center;
         }
         .header h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.25rem; }
         .header .date { font-size: 0.875rem; opacity: 0.7; }
-        .container {
-            max-width: 42rem;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .container { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .article {
+            background: #ffffff; border-radius: 12px; padding: 1.5rem;
+            margin-bottom: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
         }
-        .welcome {
-            text-align: center;
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 2.5rem 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-            width: 100%;
+        .article-header {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;
         }
-        .welcome-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .welcome h2 { font-size: 1.25rem; font-weight: 600; color: #1c1917; margin-bottom: 0.75rem; }
-        .welcome p { font-size: 0.9375rem; color: #78716c; margin-bottom: 0.5rem; }
-        .welcome .hint { font-size: 0.8rem; color: #a8a29e; margin-top: 1.5rem; }
-        .book-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-            margin-top: 1.5rem;
+        .tag {
+            background: #fef3c7; color: #92400e; padding: 0.2rem 0.6rem;
+            border-radius: 6px; font-size: 0.75rem; font-weight: 500;
         }
-        .book-tag {
-            background: #fef3c7;
-            color: #92400e;
-            padding: 0.3rem 0.75rem;
-            border-radius: 8px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
+        .progress { color: #78716c; font-size: 0.75rem; }
+        .heading { font-size: 1rem; font-weight: 600; color: #1c1917; margin-bottom: 0.75rem; }
+        .content { font-size: 0.9375rem; color: #44403c; text-align: justify; }
         .stats {
-            margin-top: 1.5rem;
-            padding-top: 1rem;
-            border-top: 1px solid #e7e5e4;
+            background: #ffffff; border-radius: 12px; padding: 1.25rem 1.5rem;
+            margin-top: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
         }
-        .stats .num { font-size: 1.5rem; font-weight: 700; color: #f59e0b; }
-        .stats .label { font-size: 0.8rem; color: #a8a29e; }
+        .stats-title { font-size: 0.8rem; color: #78716c; margin-bottom: 0.75rem; }
+        .progress-bar {
+            background: #e7e5e4; border-radius: 100px; height: 6px;
+            margin-bottom: 0.75rem; overflow: hidden;
+        }
+        .progress-fill {
+            background: #f59e0b; height: 100%; border-radius: 100px; transition: width 0.3s ease;
+        }
+        .progress-text { font-size: 0.8rem; color: #78716c; margin-bottom: 0.5rem; }
+        .stats ul { list-style: none; padding: 0; }
+        .stats li { font-size: 0.8rem; color: #78716c; padding: 0.2rem 0; }
         .footer {
-            text-align: center; color: #a8a29e; font-size: 0.75rem; padding: 1.5rem;
+            text-align: center; color: #a8a29e; font-size: 0.75rem; margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>每日阅读</h1>
-        <div class="date">每日自动更新 · 刷新页面获取最新内容</div>
+        <div class="date">2026年05月07日</div>
     </div>
     <div class="container">
-        <div class="welcome">
-            <div class="welcome-icon">📖</div>
-            <h2>欢迎来到每日阅读</h2>
-            <p>每天早上 9:00 自动更新两段精选内容</p>
-            <p>涵盖克苏鲁神话、末世文学、朋克研究、奇幻文学、地质纪元</p>
-            <div class="book-list">
-                <span class="book-tag">克苏鲁神话</span>
-                <span class="book-tag">末世文学</span>
-                <span class="book-tag">朋克研究</span>
-                <span class="book-tag">奇幻文学</span>
-                <span class="book-tag">地质纪元</span>
+        
+        <article class="article">
+            <div class="article-header">
+                <span class="tag">当代末世文学与文化专题研究：从废墟美学到世界观构建的全面考察
+引言：末世叙事的词源、流变与当代文化焦虑
+在当代推想小说（Speculative Fiction）与流行文化语境中，“末世”（Post-Apocalyptic）与“启示录”（Apocalyptic）不仅是科幻与奇幻文学的重要子类型，更演变为一种极为深刻的文化隐喻与哲学探究工具。从词源学角度考察，“启示录”（Apocalypse）一词源于古希腊语“apokalypsis”，其本义为“揭示”或“解开掩盖之物”。在历史的演进中，这一概念从最初的宗教神学范畴，逐渐世俗化为指代人类文明面临毁灭性打击的重大灾变。末世故事通常发生在非技术性的未来世界，或是一个社会与技术仅存零星元素的废墟之中，主角们在丧失了全球视野的孤立环境中挣扎求生。
+在社会科学与文化批判的审视下，此类叙事直接折射出特定文化的深层恐惧、公共管理的潜在形态，以及人类对资本主义与现代性危机的无意识焦虑。当代文化评论家马克·费舍（Mark Fisher）及克里斯托弗·施密特（Christopher Schmidt）指出，在晚期资本主义语境下，“想象世界末日比想象资本主义的终结要容易得多”。当现实世界因环境危机、资源掠夺与资本异化而逐渐“荒废”时，大众却倾向于将末日灾难转化为一种被动消费的娱乐奇观，以此来分散对真实结构性灾难的焦虑与政治责任感。本文将全面梳理末世研究的知识体系，从其深远的历史神学根源出发，途经废墟美学与存在主义心理学，深入探究其在经典文学文本中的体现与跨文化叙事差异，并最终落脚于面向创作者的末世世界观构建系统指南。</span>
+                <span class="progress">第1/19段</span>
             </div>
-            <div class="stats">
-                <div class="num">104</div>
-                <div class="label">段精选内容，等你探索</div>
+            
+            <div class="content">末世文学</div>
+        </article>
+
+        <article class="article">
+            <div class="article-header">
+                <span class="tag">跨越地质纪元与文化想象：地球五次生物大灭绝、第六次危机的科学梳理与跨学科人文审视
+引言：深时档案馆中的灭绝烙印与宏观演化法则
+在地质学与古生物学重构的46亿年地球演化史中，生命的存续与消亡始终处于一种动态的、有时极其暴烈的交替之中。根据当代科学界的估算，地球上曾经存在过的动植物物种中，至少有99.9%已经永远从生物圈中消失 。然而，人类对于“物种会灭绝”这一概念的认知觉醒却相对较晚。直到1796年，法国解剖学家乔治·居维叶（Georges Cuvier）在一次关于乳齿象化石的讲座中，才首次从科学角度提出了物种灭绝的革命性观点，这一发现彻底打破了当时受宗教教义主导的“地球生物界由造物主完美创造且恒定不变”的静态自然观 。
+随着地质学和古生物学的发展，诸如查尔斯·莱尔（Charles Lyell）和威廉·史密斯（William Smith）等地质学先驱通过地层学原则进一步揭示了地球深时（Deep Time）的尺度 。如今，依托如牛津大学自然史博物馆（OUMNH）等机构内多达40万件化石馆藏——包括玛丽·安宁（Mary Anning）发现的保留有胃部残留物的鱼龙化石、极为罕见的寒武纪软躯体化石（如Xanderella spectaculum），以及各种更新世骨骼标本——我们得以直观地触摸到生命演化与毁灭的物理证据 。这些自然史档案馆向我们揭示了生命演替的两种截然不同的模式：一种是“背景灭绝”（Background Extinction），即在漫长地质跨度内以相对恒定、较低速率发生的物种自然更替；另一种则是呈现出脉冲式爆发的极端灾难，即“生物大灭绝”（Mass Extinctions） 。</span>
+                <span class="progress">第1/23段</span>
             </div>
-            <p class="hint">明天早上再来，第一份内容将在这里等你 ✨</p>
+            
+            <div class="content">跨越地质纪元</div>
+        </article>
+
+        <div class="stats">
+            <div class="stats-title">阅读进度</div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text">已完成 0/5 份文件</div>
+            <ul><li>克苏鲁</li><li>跨越地质纪元</li><li>末世文学</li><li>朋克研究</li><li>奇幻文学</li></ul>
         </div>
+        <div class="footer">每日自动更新 · 刷新页面获取最新内容</div>
     </div>
-    <div class="footer">系统自动运行 · 无需手动操作</div>
 </body>
 </html>
