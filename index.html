@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日阅读</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #fafaf9;
+            color: #292524;
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: linear-gradient(135deg, #292524 0%, #44403c 100%);
+            color: #fafaf9;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        .header h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .header .date { font-size: 0.875rem; opacity: 0.7; }
+        .container {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .welcome {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            width: 100%;
+        }
+        .welcome-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .welcome h2 { font-size: 1.25rem; font-weight: 600; color: #1c1917; margin-bottom: 0.75rem; }
+        .welcome p { font-size: 0.9375rem; color: #78716c; margin-bottom: 0.5rem; }
+        .welcome .hint { font-size: 0.8rem; color: #a8a29e; margin-top: 1.5rem; }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .book-tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.3rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .stats {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e7e5e4;
+        }
+        .stats .num { font-size: 1.5rem; font-weight: 700; color: #f59e0b; }
+        .stats .label { font-size: 0.8rem; color: #a8a29e; }
+        .footer {
+            text-align: center; color: #a8a29e; font-size: 0.75rem; padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>每日阅读</h1>
+        <div class="date">每日自动更新 · 刷新页面获取最新内容</div>
+    </div>
+    <div class="container">
+        <div class="welcome">
+            <div class="welcome-icon">📖</div>
+            <h2>欢迎来到每日阅读</h2>
+            <p>每天早上 9:00 自动更新两段精选内容</p>
+            <p>涵盖克苏鲁神话、末世文学、朋克研究、奇幻文学、地质纪元</p>
+            <div class="book-list">
+                <span class="book-tag">克苏鲁神话</span>
+                <span class="book-tag">末世文学</span>
+                <span class="book-tag">朋克研究</span>
+                <span class="book-tag">奇幻文学</span>
+                <span class="book-tag">地质纪元</span>
+            </div>
+            <div class="stats">
+                <div class="num">104</div>
+                <div class="label">段精选内容，等你探索</div>
+            </div>
+            <p class="hint">明天早上再来，第一份内容将在这里等你 ✨</p>
+        </div>
+    </div>
+    <div class="footer">系统自动运行 · 无需手动操作</div>
+</body>
+</html>
