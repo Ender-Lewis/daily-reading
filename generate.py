@@ -168,11 +168,28 @@ def build_html(results, progress_info, date_str):
     return html
 
 
+def already_pushed_today(date_str):
+    """检查当前 index.html 是否已经是今天的内容，避免重复推送"""
+    if not os.path.exists(OUTPUT_PATH):
+        return False
+    try:
+        with open(OUTPUT_PATH, 'r', encoding='utf-8') as f:
+            content = f.read(500)  # 只读开头，够了
+        return date_str in content
+    except Exception:
+        return False
+
+
 def main():
     index = load_index()
     remaining = get_remaining_files(index)
     today = datetime.now(CST)
     date_str = today.strftime('%Y年%m月%d日')
+
+    # 今天已推送过，直接跳过（防止每小时重复触发）
+    if already_pushed_today(date_str):
+        print(f"ALREADY_DONE - {date_str}")
+        sys.exit(0)
 
     if not remaining:
         html = build_html([], {
