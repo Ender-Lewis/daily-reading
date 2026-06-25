@@ -738,7 +738,7 @@
           "text": "３.回归（Return）：英雄可能产生“拒绝回归”（Refusal of the Return）的念头，或必须经历一场惊心动魄的“魔法逃亡”（The Magic Flight）与“外界救援”（Rescue from Without）。当英雄携带着智慧与药剂成功“跨越回归的阈限”（The Crossing of the Return Threshold）后，他便蜕变为“两个世界的主宰”（Master of the Two Worlds），获得了真正无畏的“生活之自由”（Freedom to Live） 。\n４.坎贝尔的理论不仅完美契合了J.R.R.托尔金《魔戒》与J.K.罗琳《哈利·波特》的叙事骨架，甚至在后现代语境下也展现出惊人的适应力 。在玛格丽特·阿特伍德（Margaret Atwood）的后现代反乌托邦小说《羚羊与秧鸡》（Oryx and Crake）与《洪灾之年》（The Year of the Flood）中，英雄之旅被置换移植到末世废土之中，成为一种“新萨满式的旅程”（neo-shamanic journey）。通过这种现代性转码，阿特伍德利用单一神话作为桥梁，帮助后现代主体在破碎的物质世界中寻找存在的内在意义，消解了存在主义的虚无危机 。",
           "char_count": 534,
           "heading": "",
-          "sent": false
+          "sent": true
         },
         {
           "index": 17,
@@ -762,7 +762,7 @@
           "sent": false
         }
       ],
-      "current_index": 16,
+      "current_index": 17,
       "is_completed": false
     }
   },
